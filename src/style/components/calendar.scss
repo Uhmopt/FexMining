@@ -1,0 +1,33 @@
+.react-calendar {
+  padding: 10px;
+  width: 350px;
+
+  button {
+    padding: 10px;
+
+    &:hover {
+      background-color: $TRANSPARENT_WHITE;
+    }
+  }
+
+  .react-calendar__navigation {
+    padding: 10px;
+
+    display: flex;
+  }
+
+  .react-calendar__tile--active {
+    background-color: $COLOR_PRIMARY;
+    &:hover {
+      background-color: $TRANSPARENT_WHITE;
+    }
+  }
+
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: $GRAY;
+  }
+
+  .react-calendar__month-view__days__day--weekend {
+    color: $COLOR_ERROR;
+  }
+}
