@@ -10,6 +10,7 @@ export default function CustomText({
   bold = false,
   span = false,
   fontWeight = "",
+  helper = false,
   ...props
 }) {
   bold = fontWeight || bold;
@@ -21,7 +22,7 @@ export default function CustomText({
       align={align}
       className={`${shadow ? `filter drop-shadow` : ``} text-${
         props?.color ?? ""
-      } ${className} `}
+      } ${helper ? "text-gray-500" : ""} ${className} `}
       fontWeight={typeof bold === "string" ? bold : bold ? "bold" : ""}
     >
       {children}

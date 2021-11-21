@@ -1,6 +1,7 @@
-import { Fab, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import sliderImage1 from "assets/img/slider/1.jpg";
 import sliderImage2 from "assets/img/slider/2.jpg";
+import RadiusButton from "components/buttons/RadiusButton";
 import CustomSlide from "components/CustomSlide";
 import RawImage from "components/RawImage";
 import CustomText from "components/typography/CustomText";
@@ -39,18 +40,10 @@ export default function WelcomSlide() {
                 </CustomText>
                 <Grid container spacing={2}>
                   <Grid item>
-                    <Fab color="primary" variant="extended" size="small">
-                      <CustomText bold className="mx-8 my-4">
-                        LOGIN
-                      </CustomText>
-                    </Fab>
+                    <RadiusButton>LOGIN</RadiusButton>
                   </Grid>
                   <Grid item>
-                    <Fab color="secondary" variant="extended" size="small">
-                      <CustomText bold className="mx-8 my-4">
-                        SIGN UP NOW
-                      </CustomText>
-                    </Fab>
+                    <RadiusButton>SIGN UP NOW</RadiusButton>
                   </Grid>
                 </Grid>
               </div>
@@ -83,18 +76,10 @@ export default function WelcomSlide() {
               </CustomText>
               <Grid container spacing={2} justifyContent="center">
                 <Grid item>
-                  <Fab color="primary" variant="extended" size="small">
-                    <CustomText bold className="mx-8 my-4">
-                      LOGIN
-                    </CustomText>
-                  </Fab>
+                  <RadiusButton>LOGIN</RadiusButton>
                 </Grid>
                 <Grid item>
-                  <Fab color="secondary" variant="extended" size="small">
-                    <CustomText bold className="mx-8 my-4">
-                      SIGN UP NOW
-                    </CustomText>
-                  </Fab>
+                  <RadiusButton>SIGN UP NOW</RadiusButton>
                 </Grid>
               </Grid>
             </div>
