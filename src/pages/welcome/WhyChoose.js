@@ -13,13 +13,15 @@ export default function WhyChoose() {
       <RawImage className="absolute h-full w-full object-cover" src={image} />
       <Container>
         <div className="relative h-full w-full flex flex-col justify-center items-center my-10 py-4">
-          <div className="my-8 underline-2">
-            <CustomText variant="h4" span bold>
-              WHY CHOOSE
-            </CustomText>{" "}
-            <CustomText variant="h4" span color="primary" bold>
-              {APP_NAME}
-            </CustomText>
+          <div className="my-8">
+            <div>
+              <CustomText variant="h4" span bold>
+                WHY CHOOSE
+              </CustomText>{" "}
+              <CustomText variant="h4" span color="primary" bold>
+                {APP_NAME}
+              </CustomText>
+            </div>
           </div>
           <CustomText className="mt-4 mb-8" helper>
             Fexmining is a trading platform that pays his investors 2.5% daily
