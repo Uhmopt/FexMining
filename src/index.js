@@ -7,11 +7,11 @@ import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from './store';
-import { theme } from "./theme";
+import { defaultTheme } from "./theme";
 
 ReactDOM.render(
   <Provider store={store}>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <App />
     </ThemeProvider>
   </Provider>,

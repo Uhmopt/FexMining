@@ -10,7 +10,9 @@ export default function HideOnScroll({
 
   return (
     <Slide appear={false} direction="down" in={invert ? trigger : !trigger}>
-      {children}
+      <div>
+        {children}
+      </div>
     </Slide>
   )
 }

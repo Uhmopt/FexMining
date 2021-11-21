@@ -31,20 +31,17 @@ module.exports = {
       backgroundSize: {
         120: "30rem",
       },
-      backgroundImage: {
-        "girl-center": "url('/src/assets/img/back/back.webp')",
-        "girl-left": "url('/src/assets/img/back/back-left.webp')",
-      },
+      backgroundImage: {},
       fontSize: {
         xs: [".75rem", "inherit"],
       },
       colors: {
-        primary: "#0A86F0",
+        primary: "#FF9F1A",
       },
-    },
-    cursor: {
-      crosshair: "crosshair",
-      "zoom-in": "zoom-in",
+      cursor: {
+        crosshair: "crosshair",
+        "zoom-in": "zoom-in",
+      },
     },
   },
   variants: {

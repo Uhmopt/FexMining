@@ -1,24 +1,26 @@
-import { Grid, Paper, Stack } from "@mui/material";
+import { Container, Grid, Paper } from "@mui/material";
 import Logo from "components/Logo";
 import React from "react";
+import MainHeaderMenu from "./MainHeaderMenu";
 
 export default function MainHeader() {
   return (
     <Paper square elevation={1}>
-      <Grid
-        container
-        justifyContent="space-between"
-        alignItems="center"
-        className="p-2"
-      >
-        <Grid item>
-          <Stack justifyContent="space-between" alignItems="center" spacing={2}>
+      <Container>
+        <Grid
+          container
+          justifyContent="space-between"
+          alignItems="center"
+          className="py-6"
+        >
+          <Grid item>
             <Logo />
-          </Stack>
+          </Grid>
+          <Grid item>
+            <MainHeaderMenu />
+          </Grid>
         </Grid>
-        <Grid item></Grid>
-        <Grid item></Grid>
-      </Grid>
+      </Container>
     </Paper>
   );
 }
