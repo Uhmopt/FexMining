@@ -1,5 +1,5 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import HideOnTop from "components/HideOnTop";
+import HideOnScroll from "components/HideOnScroll";
 import React from "react";
 import { darkTheme } from "theme";
 import LoginHeader from "./login/LoginHeader";
@@ -7,16 +7,14 @@ import MainHeader from "./main/MainHeader";
 
 export default function Header({ isAuth = false, ...props }) {
   return (
-    <React.Fragment>
+    <div className="fixed top-0 w-screen">
       <CssBaseline />
-      <ThemeProvider theme={darkTheme}>
-        <HideOnTop {...props}>
+      <HideOnScroll {...props}>
+        <ThemeProvider theme={darkTheme}>
           <LoginHeader />
-        </HideOnTop>
-      </ThemeProvider>
-      <HideOnTop {...props}>
-        <MainHeader />
-      </HideOnTop>
-    </React.Fragment>
+        </ThemeProvider>
+      </HideOnScroll>
+      <MainHeader />
+    </div>
   );
 }
