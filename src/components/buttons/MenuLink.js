@@ -27,7 +27,7 @@ export default function MenuLink({
       <div
         onClick={handleClick}
         {...props}
-        className={`transistion transition-all cursor-pointer text-lg font-bold p-2 ${
+        className={`transistion transition-all duration-500 cursor-pointer text-lg font-bold p-2 ${
           active ? "text-primary" : ""
         } hover:text-primary`}
       >

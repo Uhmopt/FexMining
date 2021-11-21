@@ -1,0 +1,9 @@
+.feature-card {
+  box-shadow: 0 8px 48px 0 rgb(0 0 0 / 8%);
+  outline: 1px solid #fff;
+  padding: 50px 30px;
+
+  &:hover {
+    outline-offset: -18px;
+  }
+}
