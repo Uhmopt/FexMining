@@ -11,7 +11,7 @@ export default function MainHeader() {
           container
           justifyContent="space-between"
           alignItems="center"
-          className="py-6"
+          className="py-8"
         >
           <Grid item>
             <Logo />

@@ -11,7 +11,7 @@ export default function Layout({ children = <></>, fullWidth = false }) {
   return (
     <HtmlContainer>
       <Header isAuth={isAuth} />
-      <div className="mt-38">
+      <div className="mt-36 relative">
         {Boolean(fullWidth) ? (
           <Body>{children}</Body>
         ) : (

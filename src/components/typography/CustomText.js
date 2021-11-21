@@ -9,8 +9,11 @@ export default function CustomText({
   align,
   bold = false,
   span = false,
+  fontWeight = "",
   ...props
 }) {
+  bold = fontWeight || bold;
+
   return (
     <Typography
       {...props}
@@ -19,7 +22,7 @@ export default function CustomText({
       className={`${shadow ? `filter drop-shadow` : ``} text-${
         props?.color ?? ""
       } ${className} `}
-      fontWeight={bold ? "bold" : ""}
+      fontWeight={typeof bold === "string" ? bold : bold ? "bold" : ""}
     >
       {children}
     </Typography>

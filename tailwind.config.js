@@ -1,5 +1,6 @@
 // tailwind.config.js
 module.exports = {
+  important: true,
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -18,6 +19,9 @@ module.exports = {
         "-2": "-2",
       },
       spacing: {
+        100: "25rem",
+        128: "32rem",
+        160: "40rem",
         "2x": "calc(200%)",
         "3x": "calc(300%)",
         "4x": "calc(400%)",
@@ -36,7 +40,7 @@ module.exports = {
         xs: [".75rem", "inherit"],
       },
       colors: {
-        primary: "#FF9F1A",
+        primary: "#FFA71A",
       },
       cursor: {
         crosshair: "crosshair",

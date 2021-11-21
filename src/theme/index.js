@@ -1,12 +1,11 @@
 import { createTheme } from "@mui/material";
-import { PRIMARY_COLOR } from "./variable";
+import { PRIMARY_COLOR, SECONDARY_COLOR } from "./variable";
 
 export const defaultTheme = createTheme({
   palette: {
     mode: "light",
-    primary: {
-      main: PRIMARY_COLOR,
-    },
+    primary: { main: PRIMARY_COLOR },
+    secondary: { main: SECONDARY_COLOR },
   },
   typography: {
     // In Chinese and Japanese the characters are usually larger,
@@ -18,9 +17,8 @@ export const defaultTheme = createTheme({
 export const darkTheme = createTheme({
   palette: {
     mode: "dark",
-    primary: {
-      main: PRIMARY_COLOR,
-    },
+    primary: { main: PRIMARY_COLOR },
+    secondary: { main: SECONDARY_COLOR },
   },
   typography: {
     // In Chinese and Japanese the characters are usually larger,
