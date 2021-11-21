@@ -10,7 +10,7 @@ export default function RawImage({
   return (
     <img
       src={src}
-      alt={alt || name || src}
+      alt={alt || name}
       name={name}
       className={`${className}`}
       {...props}

@@ -35,7 +35,9 @@ module.exports = {
       backgroundSize: {
         120: "30rem",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        "coin-board": "url('/src/assets/img/back/coin-board.jpg')",
+      },
       fontSize: {
         xs: [".75rem", "inherit"],
       },
