@@ -13,19 +13,19 @@ export default function WhyChoose() {
       <RawImage className="absolute h-full w-full object-cover" src={image} />
       <Container>
         <div className="relative h-full w-full flex flex-col justify-center items-center my-10 py-4">
-          <div className="my-4">
-            <CustomText variant="h4" span>
+          <div className="my-8 underline-2">
+            <CustomText variant="h4" span bold>
               WHY CHOOSE
             </CustomText>{" "}
-            <CustomText variant="h4" span color="primary">
+            <CustomText variant="h4" span color="primary" bold>
               {APP_NAME}
             </CustomText>
           </div>
-          <CustomText className="my-4" helper>
+          <CustomText className="mt-4 mb-8" helper>
             Fexmining is a trading platform that pays his investors 2.5% daily
             for 30days. We trade and help you get to financial Independence.
           </CustomText>
-          <div className="my-4">
+          <div className="mt-8">
             <Grid container spacing={6}>
               {featureCards.map((card, cardIndex) => (
                 <Grid key={cardIndex} item lg={4} md={4} sm={6} xs={12}>

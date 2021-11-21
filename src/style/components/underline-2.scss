@@ -1,0 +1,25 @@
+.underline-2 {
+  &:after {
+    background: $PRIMARY_COLOR none repeat scroll 0 0;
+    bottom: -17px;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 120px;
+  }
+
+  &:before {
+    background: $PRIMARY_COLOR none repeat scroll 0 0;
+    bottom: -25px;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 70px;
+  }
+}
