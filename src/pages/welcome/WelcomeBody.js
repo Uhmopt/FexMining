@@ -5,6 +5,7 @@ import GetStartedSection from "./GetStartedSection";
 import HowItWorksSection from "./HowItWorksSection";
 import LatestWithdrawsSection from "./LatestWithdrawsSection";
 import LittleAbout from "./LittleAbout";
+import PriceSection from "./PriceSection";
 import WhyChoose from "./WhyChoose";
 
 export default function WelcomeBody() {
@@ -17,6 +18,7 @@ export default function WelcomeBody() {
       <BitcoinLivePriceTableSection />
       <CountPanel />
       <LatestWithdrawsSection />
+      <PriceSection />
     </div>
   );
 }
