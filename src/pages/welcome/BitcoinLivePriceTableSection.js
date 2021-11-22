@@ -11,7 +11,7 @@ export default function BitcoinLivePriceTableSection() {
       <RawImage className="absolute h-full w-full object-cover" src={image} />
       <div className="relative w-full h-full bg-white bg-opacity-80">
         <Container>
-          <div className="relative h-full w-full flex flex-col justify-center items-center my-10 py-4">
+          <div className="relative h-full w-full flex flex-col justify-center items-center py-4">
             <div className="my-8">
               <div>
                 <CustomText variant="h4" span bold>
@@ -29,7 +29,7 @@ export default function BitcoinLivePriceTableSection() {
               Bitcoin remains the most popular cryptocurrency in the world at
               the moment.
             </CustomText>
-            <div className="mt-8 w-full h-96 bitcoin-price-chart">
+            <div className="mt-8 pb-8 w-full h-96 bitcoin-price-chart">
               <TradeViewChart pair="BTCBUSD" />
             </div>
           </div>

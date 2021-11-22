@@ -1,5 +1,6 @@
 import React from "react";
 import BitcoinLivePriceTableSection from "./BitcoinLivePriceTableSection";
+import CountPanel from "./CountPanel";
 import GetStartedSection from "./GetStartedSection";
 import HowItWorksSection from "./HowItWorksSection";
 import LittleAbout from "./LittleAbout";
@@ -13,6 +14,7 @@ export default function WelcomeBody() {
       <GetStartedSection />
       <HowItWorksSection />
       <BitcoinLivePriceTableSection />
+      <CountPanel />
     </div>
   );
 }
