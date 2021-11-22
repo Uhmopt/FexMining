@@ -1,8 +1,9 @@
 import React from "react";
-import LittleAbout from "./LittleAbout";
-import WhyChoose from "./WhyChoose";
+import BitcoinLivePriceTableSection from "./BitcoinLivePriceTableSection";
 import GetStartedSection from "./GetStartedSection";
 import HowItWorksSection from "./HowItWorksSection";
+import LittleAbout from "./LittleAbout";
+import WhyChoose from "./WhyChoose";
 
 export default function WelcomeBody() {
   return (
@@ -11,6 +12,7 @@ export default function WelcomeBody() {
       <WhyChoose />
       <GetStartedSection />
       <HowItWorksSection />
+      <BitcoinLivePriceTableSection />
     </div>
   );
 }
