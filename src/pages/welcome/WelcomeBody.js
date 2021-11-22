@@ -6,6 +6,7 @@ import HowItWorksSection from "./HowItWorksSection";
 import LatestWithdrawsSection from "./LatestWithdrawsSection";
 import LittleAbout from "./LittleAbout";
 import PriceSection from "./PriceSection";
+import StartInvesting from "./StartInvesting";
 import WhyChoose from "./WhyChoose";
 
 export default function WelcomeBody() {
@@ -19,6 +20,7 @@ export default function WelcomeBody() {
       <CountPanel />
       <LatestWithdrawsSection />
       <PriceSection />
+      <StartInvesting />
     </div>
   );
 }
