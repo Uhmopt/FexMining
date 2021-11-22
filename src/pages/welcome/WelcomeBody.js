@@ -1,17 +1,16 @@
 import React from "react";
 import LittleAbout from "./LittleAbout";
 import WhyChoose from "./WhyChoose";
-import { Container } from "@mui/material";
 import GetStartedSection from "./GetStartedSection";
+import HowItWorksSection from "./HowItWorksSection";
 
 export default function WelcomeBody() {
   return (
     <div>
-      <Container>
-        <LittleAbout />
-      </Container>
+      <LittleAbout />
       <WhyChoose />
       <GetStartedSection />
+      <HowItWorksSection />
     </div>
   );
 }
