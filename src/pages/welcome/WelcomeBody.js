@@ -1,6 +1,7 @@
 import React from "react";
 import BitcoinLivePriceTableSection from "./BitcoinLivePriceTableSection";
 import CountPanel from "./CountPanel";
+import EssentialBenefits from "./EssentialBenefits";
 import GetStartedSection from "./GetStartedSection";
 import HowItWorksSection from "./HowItWorksSection";
 import LatestWithdrawsSection from "./LatestWithdrawsSection";
@@ -21,6 +22,7 @@ export default function WelcomeBody() {
       <LatestWithdrawsSection />
       <PriceSection />
       <StartInvesting />
+      <EssentialBenefits />
     </div>
   );
 }
