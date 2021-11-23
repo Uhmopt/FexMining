@@ -1,12 +1,12 @@
 import Layout from "layouts";
 import React from "react";
 import WelcomeBody from "./WelcomeBody";
-import WelcomSlide from "./WelcomSlide";
+import WelcomeSlide from "./WelcomeSlide";
 
 export default function Welcome() {
   return (
     <Layout fullWidth>
-      <WelcomSlide />
+      <WelcomeSlide />
       <WelcomeBody />
     </Layout>
   );

@@ -7,9 +7,9 @@ import RawImage from "components/RawImage";
 import CustomText from "components/typography/CustomText";
 import React from "react";
 
-export default function WelcomSlide() {
+export default function WelcomeSlide() {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <CustomSlide
         variant="fade"
         data={[
