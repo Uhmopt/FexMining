@@ -37,6 +37,7 @@ export default function OnlineQuestionForm() {
             variant="contained"
             startIcon={<Send />}
             fullWidth
+            size="large"
           >
             SEND MESSAGE
           </Button>
