@@ -15,7 +15,7 @@ export default function MainFooter() {
         className="absolute w-full h-full object-cover opacity-40"
         src={image}
       />
-      <div className="relative w-full h-100 py-16 bg-gray-900 bg-opacity-60">
+      <div className="relative w-full min-h-100 py-24 bg-gray-900 bg-opacity-60">
         <Container>
           <Grid container spacing={1}>
             <Grid item lg={3} md={3} sm={6} xs={12}>
