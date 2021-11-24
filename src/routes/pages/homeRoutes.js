@@ -1,4 +1,5 @@
 import About from "pages/about";
+import Packages from "pages/packages";
 import Welcome from "pages/welcome";
 
 const routes = [
@@ -15,6 +16,13 @@ const routes = [
     exact: true,
     auth: false,
     component: About,
+  },
+  // Packages
+  {
+    path: `/packages`,
+    exact: true,
+    auth: false,
+    component: Packages,
   },
 ];
 

@@ -9,7 +9,7 @@ export default function PageHeader({ title = "", subTitle = "", image = "" }) {
   return (
     <div className="w-full relative">
       <RawImage className="absolute h-full w-full object-cover" src={image} />
-      <div className="relative h-full w-full flex flex-col justify-center items-center py-40 bg-black bg-opacity-60 text-white">
+      <div className="relative h-full w-full flex flex-col justify-center items-center py-36 bg-black bg-opacity-60 text-white">
         <Container>
           <Stack spacing={2}>
             <div className="border-l-4 border-primary pl-4">
