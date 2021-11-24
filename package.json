@@ -1,5 +1,5 @@
 {
-  "name": "mya-web",
+  "name": "fexmining",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -59,6 +59,6 @@
     "autoprefixer": "9",
     "postcss": "7",
     "sass": "^1.39.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
