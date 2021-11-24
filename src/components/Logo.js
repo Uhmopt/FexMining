@@ -6,12 +6,19 @@ import imgLogo from "assets/img/logo/full.jpg";
 import imgMark from "assets/img/logo/mark.png";
 import { Link } from "react-router-dom";
 
-export default function Logo({ variant = "img" }) {
+export default function Logo({
+  variant = "img",
+  size = "medium",
+  className = "",
+}) {
   return (
-    <div>
+    <div className={className}>
       <Link to="/">
         {variant === "img" ? (
-          <RawImage src={imgLogo} className="h-10" />
+          <RawImage
+            src={imgLogo}
+            className={size === "small" ? "h-8" : "h-10"}
+          />
         ) : variant === "mark" ? (
           <RawImage src={imgMark} className="h-10" />
         ) : variant === "text" ? (
