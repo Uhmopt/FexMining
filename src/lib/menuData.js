@@ -8,7 +8,7 @@ export const menuData = [
   // Timeline
   { title: "Timeline", to: "/timeline" },
   // Login/Join
-  { title: "Login/Join", to: "/login" },
+  { title: "Login/Join", to: "#" },
   // Contact
   { title: "Contact", to: "/contact" },
 ];
