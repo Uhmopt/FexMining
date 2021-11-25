@@ -9,7 +9,7 @@ export default function MainHeaderMenu() {
   const location = useLocation();
   return (
     <div>
-      <Grid container>
+      <Grid container spacing={2}>
         {menuData.map((menu, menuIndex) => (
           <Grid item key={menuIndex}>
             <MenuLink

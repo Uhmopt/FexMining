@@ -1,36 +1,28 @@
 import { Email, Logout, Person } from "@mui/icons-material";
-import { Button, Container, Grid, Paper } from "@mui/material";
-import { APP_EMAIL } from 'lib/global';
+import { Container, Grid, Paper } from "@mui/material";
+import LinkButton from "components/buttons/LinkButton";
+import { APP_EMAIL } from "lib/global";
 import React from "react";
 export default function LoginHeader() {
   return (
     <Paper square elevation={1}>
       <Container>
-        <Grid
-          container
-          justifyContent="space-between"
-          alignItems="center"
-        >
+        <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <Button size="small" variant="text" color="inherit" startIcon={<Email color="primary" />} >
+            <LinkButton icon={<Email color="primary" />}>
               {APP_EMAIL}
-            </Button>
+            </LinkButton>
           </Grid>
           <Grid item>
-            <Grid
-              container
-              justifyContent="space-between"
-              alignItems="center"
-              className="p-2"
-            >
-              <Grid item>
-                <Button size="small" variant="text" color="inherit" startIcon={<Person color="primary" />} >
-                  LOGIN
-            </Button></Grid>
-              <Grid item>
-                <Button size="small" variant="text" color="inherit" startIcon={<Logout color="primary" />} >
+            <Grid container justifyContent="space-between" alignItems="center">
+              <Grid item className="p-2">
+                <LinkButton icon={<Person color="primary" />}>LOGIN</LinkButton>
+              </Grid>
+              <Grid item className="p-2">
+                <LinkButton icon={<Logout color="primary" />}>
                   SIGNUP
-            </Button></Grid>
+                </LinkButton>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>

@@ -26,7 +26,7 @@ export default function FooterSocial() {
             <Twitter />,
             <YouTube />,
           ].map((icon, iconIndex) => (
-            <Grid index={iconIndex} item>
+            <Grid key={iconIndex} item>
               <LinkButton variant="outlined" icon={icon} />
             </Grid>
           ))}
